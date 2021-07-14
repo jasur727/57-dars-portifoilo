@@ -1,0 +1,68 @@
+/* site-hero */
+
+.site-hero__content-heading {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ibarra Real Nova', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+
+.site-hero__content-text {
+  margin: 0;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #33323D;
+  opacity: 0.8;
+  margin: 24px 0;
+}
+
+.site-hero__content-list2 {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.site-hero__content-item2 {
+  list-style: none;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.site-hero__content-img2 {
+  fill: rgba(51, 50, 61, 1);
+}
+
+@media only screen and (min-width: 768px) {
+
+    .site-hero__content-text {
+      max-width: 690px;
+      margin-bottom: 26px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .site-contact__content{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-hero__content-heading {
+    margin-top: 27px;
+  }
+
+  .site-hero__content-text {
+    margin: 0;
+    padding: 0;
+    max-width: 615px;
+    margin-bottom: 26px;
+  }
+}
