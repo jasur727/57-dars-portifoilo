@@ -42,21 +42,25 @@
 
 @media only screen and (min-width: 768px) {
 
-    .site-hero__content-text {
-      max-width: 690px;
-      margin-bottom: 26px;
-    }
+  .site-contact__content{
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
+    padding-top: 32px;
+
+    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+    padding-bottom: 32px;
+  }
+
+  .site-hero__content-text {
+    max-width: 690px;
+    margin-bottom: 26px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
 
-  .site-contact__content{
+  .site-contact__content {
     display: flex;
     justify-content: space-between;
-  }
-
-  .site-hero__content-heading {
-    margin-top: 27px;
   }
 
   .site-hero__content-text {
