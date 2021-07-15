@@ -1080,8 +1080,15 @@ img {
   text-transform: uppercase;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+  border: 1px solid transparent;
   cursor: pointer;
   color: #fff;
+}
+
+.form-wrapper__submit:hover {
+  background-color: #fff;
+  color: #203A4C;
+  border: 1px solid #203A4C;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1108,7 +1115,7 @@ img {
 /*message*/
 .message {
   padding-top: 12px;
-  font-family: 'Public Sans';
+  font-family: 'Public Sans',sans-serif;
   font-style: normal;
   resize: none;
   height: 96px;

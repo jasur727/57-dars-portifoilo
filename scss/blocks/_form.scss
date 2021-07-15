@@ -55,8 +55,15 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
+  border: 1px solid transparent;
   cursor: pointer;
   color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: #203A4C;
+    border: 1px solid #203A4C;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -75,4 +82,4 @@
     flex-grow: 1;
     max-width: 625px;
   }
-}
+} 
