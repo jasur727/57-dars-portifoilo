@@ -411,6 +411,7 @@ img {
   overflow: hidden;
 }
 
+/* CONTAINER */
 .container {
   width: 100%;
   max-width: 1160px;
@@ -1069,14 +1070,6 @@ img {
   opacity: 0.4;
 }
 
-.message {
-  padding-top: 12px;
-  font-family: 'Public Sans';
-  font-style: normal;
-  resize: none;
-  height: 96px;
-}
-
 .form-wrapper__submit {
   padding: 16px 30px;
   background-color: #203A4C;
@@ -1111,6 +1104,15 @@ img {
             flex-grow: 1;
     max-width: 625px;
   }
+}
+
+/*message*/
+.message {
+  padding-top: 12px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  resize: none;
+  height: 96px;
 }
 
 /* FOOTER */
