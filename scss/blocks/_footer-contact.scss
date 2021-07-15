@@ -37,7 +37,6 @@
 
 .site-footer__content {
   padding: 56px 0;
-  display: flex;
 }
 
 .site-footer__content-img {
@@ -67,11 +66,11 @@
 .site-footer__bottom-img {
   fill: #fff;
   transition: fill 0.5s ease;
-}
 
-.site-footer__bottom-img:hover {
-  fill: #fff;
-  opacity: 0.7;
+  &:hover {
+    fill: #fff;
+    opacity: 0.7;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -98,8 +97,10 @@
     margin-top: -17px;
   }
 
-  .site-footer__nav-item:not(:last-child) {
-    margin-right: 42px;
+  .site-footer__nav-item {
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
   }
 
   .site-footer__bottom {

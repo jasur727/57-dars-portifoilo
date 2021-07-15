@@ -681,6 +681,10 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
+    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
   .site-hero__content-text {
     margin: 0;
@@ -975,7 +979,7 @@ img {
     width: 508px;
     background-color: #fff;
     position: absolute;
-    top: 574px;
+    top: 461px;
     padding-top: 56px;
     padding-right: 56px;
   }
@@ -998,7 +1002,7 @@ img {
     width: 508px;
     background-color: #fff;
     position: absolute;
-    top: 701px;
+    top: 660px;
     padding-top: 56px;
     padding-right: 56px;
   }
@@ -1159,9 +1163,6 @@ img {
 /* .site-footer */
 .site-footer__content {
   padding: 56px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .site-footer__content-img {
