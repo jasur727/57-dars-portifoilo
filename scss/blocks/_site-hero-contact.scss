@@ -22,13 +22,13 @@
   margin: 24px 0;
 }
 
-.site-hero__content-list2 {
+.hero-content__list {
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-.site-hero__content-item2 {
+.hero-content__item {
   list-style: none;
 
   &:not(:last-child) {
@@ -36,13 +36,13 @@
   }
 }
 
-.site-hero__content-img2 {
+.hero-content__img {
   fill: rgba(51, 50, 61, 1);
 }
 
 @media only screen and (min-width: 768px) {
 
-  .site-contact__content {
+  .site-content__content {
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     padding-top: 32px;
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
@@ -57,7 +57,7 @@
 
 @media only screen and (min-width: 1000px) {
 
-  .site-contact__content {
+  .site-content__content {
     display: flex;
     justify-content: space-between;
   }
