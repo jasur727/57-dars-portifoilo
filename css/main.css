@@ -391,7 +391,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: 'Public Sans', 'Ibarra Real Nova', "Arial", sans-serif;
+  font-family: 'Ibarra Real Nova', "Arial", sans-serif;
   background-color: #fff;
 }
 
@@ -400,6 +400,7 @@ img {
   height: auto;
 }
 
+/*VISUALLY - HIDDEN*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -421,7 +422,7 @@ img {
   margin-left: auto;
 }
 
-/* HEADER */
+/* SITE-HEADER */
 .site-header {
   position: relative;
   z-index: 1;
@@ -536,43 +537,6 @@ img {
   .site-header__nav-link:hover {
     color: #5fb4a2;
   }
-  .sitenav {
-    display: block;
-    padding: 0;
-    background-color: transparent;
-    position: static;
-    text-align: center;
-    padding: 40px 63px;
-    max-width: 0;
-    min-height: 0;
-    top: 0;
-    left: 0;
-  }
-  .sitenav-list {
-    width: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    white-space: nowrap;
-  }
-  .sitenav-list:not(:last-child) {
-    margin-bottom: 0;
-  }
-  .sitenav-link {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #33323D;
-    margin-right: 43px;
-    -webkit-transition: color 0.5s ease;
-    transition: color 0.5s ease;
-  }
-  .sitenav-link:hover {
-    color: #5FB4A2;
-  }
 }
 
 .sitenav {
@@ -596,12 +560,12 @@ img {
   white-space: nowrap;
 }
 
-.sitenav-item:not(:last-child) {
+.sitenav-list:not(:last-child) {
   margin-bottom: 0;
 }
 
 .sitenav-link {
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -617,21 +581,20 @@ img {
   color: #5FB4A2;
 }
 
-/* site-hero */
-.site-hero__content-heading {
-  padding: 0;
+/* site-content */
+.site-content__heading {
   margin: 0;
-  font-family: 'Ibarra Real Nova', sans-serif;
+  font-family: 'Ibarra Real Nova', "Arial", sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 42px;
-  letter-spacing: -0.357143px;
+  letter-spacing: -0.4px;
   color: #33323D;
 }
 
-.site-hero__content-text {
+.site-content__text {
   margin: 0;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', "Arial", sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
@@ -640,40 +603,7 @@ img {
   margin: 24px 0;
 }
 
-.hero-content__list {
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hero-content__item {
-  list-style: none;
-}
-
-.hero-content__item:not(:last-child) {
-  margin-right: 15px;
-}
-
-.hero-content__img {
-  fill: #33323d;
-}
-
 @media only screen and (min-width: 768px) {
-  .site-content__content {
-    border-top: 1px solid rgba(51, 50, 61, 0.15);
-    padding-top: 32px;
-    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
-    padding-bottom: 32px;
-  }
-  .site-hero__content-text {
-    max-width: 690px;
-    margin-bottom: 26px;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
   .site-content__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -681,12 +611,21 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border-top: 1px solid rgba(51, 50, 61, 0.15);
-    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
-    padding-top: 48px;
-    padding-bottom: 48px;
   }
-  .site-hero__content-text {
+  .site-content__text {
+    max-width: 690px;
+    margin-bottom: 26px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .site-content__content {
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
+    padding-top: 32px;
+    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+    padding-bottom: 32px;
+  }
+  .site-content__text {
     margin: 0;
     padding: 0;
     max-width: 615px;
@@ -717,7 +656,7 @@ img {
 
 .about-content__list-title {
   margin: 0;
-  font-family: 'Ibarra Real Nova', sans-serif;
+  font-family: 'Ibarra Real Nova', "Arial", sans-serif;
   letter-spacing: -0.357143px;
   color: #33323D;
   margin-bottom: 28px;
@@ -727,7 +666,7 @@ img {
 
 .about-content__list-text {
   margin: 0;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', "Arial", sans-serif;
   font-size: 16px;
   line-height: 30px;
   color: #33323D;
@@ -737,7 +676,7 @@ img {
 
 .about-content__list-link {
   display: inline-block;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -807,9 +746,24 @@ img {
   margin-bottom: 80px;
 }
 
+@media only screen and (min-width: 768px) {
+  /* features */
+  .features {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /* features */
+  .features {
+    margin-top: 150px;
+  }
+}
+
+/* feature-content */
 .features-content__title {
   margin: 0;
-  font-family: 'Ibarra Real Nova', sans-serif;
+  font-family: 'Ibarra Real Nova', "Arial", sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 42px;
@@ -822,7 +776,7 @@ img {
 
 .features-content__link {
   text-decoration: none;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -842,10 +796,7 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-  /* features */
-  .features {
-    padding: 0;
-  }
+  /* features-content */
   .features-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -860,7 +811,7 @@ img {
     margin: 0;
     max-width: 350px;
     position: relative;
-    font-family: 'Ibarra Real Nova', sans-serif;
+    font-family: 'Ibarra Real Nova', "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -887,10 +838,7 @@ img {
 }
 
 @media only screen and (min-width: 1000px) {
-  /* features */
-  .features {
-    margin-top: 150px;
-  }
+  /* features-content */
   .features-content__title::before {
     content: '';
     position: absolute;
@@ -927,7 +875,7 @@ img {
 .site-hero__content-title {
   margin: 0;
   min-width: 311px;
-  font-family: 'Ibarra Real Nova', sans-serif;
+  font-family: 'Ibarra Real Nova', "Arial", sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 42px;
@@ -963,7 +911,7 @@ img {
 
 .site-hero__item-link {
   text-decoration: none;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -1008,25 +956,61 @@ img {
   }
 }
 
+.hero-content__list {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-content__item {
+  list-style: none;
+}
+
+.hero-content__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.hero-content__img {
+  fill: #33323d;
+}
+
 /* FORM */
 .form {
   padding-top: 32px;
   padding-bottom: 80px;
 }
 
+/* form-contact */
 .form-contact__heading {
-  margin: 0;
   padding: 0;
   margin-top: 0;
   margin-bottom: 24px;
-  font-family: 'Ibarra Real Nova',sans-serif;
+  font-family: 'Ibarra Real Nova', "Arial", sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 42px;
-  letter-spacing: -0.357143px;
+  letter-spacing: -0.4px;
   margin-bottom: 32px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .form-contact__heading {
+    margin: 0;
+    margin-right: 192px;
+  }
+  .form-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/* from-wrapper */
 .form-wrapper__input {
   margin-bottom: 26px;
 }
@@ -1096,18 +1080,6 @@ img {
 }
 
 @media only screen and (min-width: 1000px) {
-  .form-contact__heading {
-    margin: 0;
-    margin-right: 192px;
-  }
-  .form-contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .form-wrapper {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -1119,13 +1091,13 @@ img {
 /*message*/
 .message {
   padding-top: 12px;
-  font-family: 'Public Sans',sans-serif;
+  font-family: 'Public Sans', "Arial", sans-serif;
   font-style: normal;
   resize: none;
   height: 96px;
 }
 
-/* FOOTER */
+/* SITE FOOTER */
 .site-footer {
   background-color: #33323d;
   margin-top: 80px;
@@ -1143,7 +1115,7 @@ img {
 
 .site-footer__nav-link {
   text-decoration: none;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;

@@ -1,0 +1,25 @@
+/* form-contact */
+.form-contact__heading {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: 'Ibarra Real Nova', "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.4px;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .form-contact__heading {
+    margin: 0;
+    margin-right: 192px;
+  }
+
+  .form-contact {
+    display: flex;
+    justify-content: space-between;
+  }
+} 

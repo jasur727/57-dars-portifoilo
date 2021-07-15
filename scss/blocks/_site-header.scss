@@ -1,4 +1,4 @@
-/* HEADER */
+/* SITE-HEADER */
 
 .site-header {
   position: relative;
@@ -107,45 +107,6 @@
 
     &:hover {
       color: rgba(95, 180, 162, 1);
-    }
-  }
-
-  .sitenav {
-    display: block;
-    padding: 0;
-    background-color: transparent;
-    position: static;
-    text-align: center;
-    padding: 40px 63px;
-    max-width: 0;
-    min-height: 0;
-    top: 0;
-    left: 0;
-  }
-
-  .sitenav-list {
-    width: 0;
-    display: flex;
-    white-space: nowrap;
-
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
-  }
-
-  .sitenav-link {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #33323D;
-    margin-right: 43px;
-    transition: color 0.5s ease;
-
-    &:hover {
-      color: #5FB4A2;
     }
   }
 }
